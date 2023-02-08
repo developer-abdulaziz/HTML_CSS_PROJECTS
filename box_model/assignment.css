@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+}
+
+/* assignment_part  */
+.box_model h1{
+    font-size: 48px;
+    color: #104C90;
+    text-align: center;
+    margin-bottom: 66px;
+}
+.box_model_main {
+    width: 500px;
+    height: 460px;
+    margin: 0 auto;
+    background: #F1F1F1;;
+    padding: 30px;
+}
+.box_model_main h2 {
+    font-size: 32px;
+    color: #2E7AD3;
+    padding-bottom: 20px;
+}
+.box_model_main img {
+    padding-bottom: 28px;
+}
+.box_model_main p {
+    font-size: 20px;
+    padding-bottom: 36px;
+}
+.box_model_main u {
+    color: #FF8000;
+}
+.box_model_main a {
+    text-decoration: none;
+    background-color: #2E7AD3;
+    padding: 10px 40px;
+    color: #F1F1F1;
+    font-weight: bold;
+}
