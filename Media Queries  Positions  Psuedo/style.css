@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.005em;
+}
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+html {
+    --primary-color:#385F96;
+    --success-color:#44D1D9C7;
+    /* font-size: 62.5%; */
+}
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+}
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+/*=======================*/
+.hero_wrapper, 
+.services_wrapper, 
+.contact_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero_wrapper > *, 
+.services_wrapper > *, 
+.contact_wrapper > * {
+    flex-basis: 100%;
+}
+
+.hero_content,
+ .services_content, 
+ .contact_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero_img,
+.services_img,
+.contact_img {
+    text-align: center;
+}
+.button  {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 5px 0px;
+    width: 120px;
+    border-radius: 50px;
+    text-align: center;
+    /* margin-top: 15px; */
+}
+
+/*=======================*/
+
+/*========= navigation part start ========*/
+header {
+    /* background: whitesmoke; */
+    padding-bottom: 50px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--primary-color);
+}
+
+.nav_items ul {
+    display: flex;
+    gap: 20px;
+}
+.nav_items ul li a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+/* --=============== hero_part_start =============-- */
+
+.hero_section {
+    margin-bottom: 150px;
+}
+.hero_content h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--primary-color);
+    position: relative;
+}
+.hero_content h2::before {
+    content: "";
+    background-image: url(image/01.png); 
+    background-repeat: no-repeat;   
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 90px;
+    height: 80px;
+    top: -25px;
+    left: -35px;
+    z-index: -1;
+}
+
+
+/* --=============== hero_part_end =============-- */
+
+/* --=============== services_part_start =============-- */
+.services_section {
+    margin-bottom: 100px;
+}
+ .services_content h2 {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--primary-color);
+ }
+ .services_content h2::before {
+    position: absolute;
+    content: "";
+    background:var(--success-color);
+    width: 75px;
+    height: 4px;
+    top: -5px;
+ }
+
+/* --=============== services_part_end =============-- */
+
+
+/* --=============== contact_part_start =============-- */
+.contact_area {
+    background: var(--success-color);
+    padding: 50px 0px;
+}
+ .contact_content h2 {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--primary-color);
+    z-index: 1;
+ }
+ .contact_content h2::before {
+    content: "";
+    background-image: url(image/05.png); 
+    background-repeat: no-repeat;   
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 90px;
+    height: 80px;
+    top: -25px;
+    left: -35px;
+    z-index: -1;
+ }
+/* --=============== contact_part_end =============-- */
+
+/*================= footer part start  ================*/
+footer {
+    background-color: #385f96;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 0px;
+}
+span {
+    color: red;
+}
+/*======== footer part end  =======*/
+
+
+@media (max-width:600px){
+    header{
+        margin-bottom: 50px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /*===============*/
+
+    .hero_wrapper, 
+    .services_wrapper, 
+    .contact_wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .hero_content, 
+    .services_content, 
+    .contact_content {
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+    /*===============*/
+}
